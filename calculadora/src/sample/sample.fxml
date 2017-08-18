@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Pane prefHeight="392.0" prefWidth="238.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <ImageView fitHeight="489.0" fitWidth="323.0" layoutX="-29.0" layoutY="-54.0" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: black;">
+               <image>
+                  <Image url="@rNZ20v.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="num1" layoutX="33.0" layoutY="253.0" mnemonicParsing="false" onAction="#num1" prefHeight="24.0" prefWidth="28.0" scaleX="1.5" scaleY="1.5" scaleZ="1.5" text="1" />
+            <Button fx:id="num2" layoutX="83.0" layoutY="253.0" mnemonicParsing="false" onAction="#num2" prefHeight="24.0" prefWidth="26.0" scaleX="1.5" scaleY="1.5" scaleZ="1.5" text="2" />
+            <Button fx:id="num3" layoutX="131.0" layoutY="253.0" mnemonicParsing="false" onAction="#num3" prefHeight="24.0" prefWidth="28.0" scaleX="1.5" scaleY="1.5" scaleZ="1.5" text="3" />
+            <Button fx:id="num4" layoutX="33.0" layoutY="205.0" mnemonicParsing="false" onAction="#num4" prefHeight="24.0" prefWidth="28.0" scaleX="1.5" scaleY="1.5" scaleZ="1.5" text="4" />
+            <Button fx:id="num5" layoutX="83.0" layoutY="205.0" mnemonicParsing="false" onAction="#num5" prefHeight="24.0" prefWidth="27.0" scaleX="1.5" scaleY="1.5" scaleZ="1.5" text="5" />
+            <Button fx:id="num6" layoutX="131.0" layoutY="205.0" mnemonicParsing="false" onAction="#num6" prefHeight="24.0" prefWidth="28.0" scaleX="1.5" scaleY="1.5" scaleZ="1.5" text="6" />
+            <Button fx:id="num7" layoutX="33.0" layoutY="158.0" mnemonicParsing="false" onAction="#num7" prefHeight="24.0" prefWidth="28.0" scaleX="1.5" scaleY="1.5" scaleZ="1.5" text="7" />
+            <Button fx:id="num8" layoutX="83.0" layoutY="158.0" mnemonicParsing="false" onAction="#num8" prefHeight="24.0" prefWidth="27.0" scaleX="1.5" scaleY="1.5" scaleZ="1.5" text="8" />
+            <Button fx:id="num9" layoutX="131.0" layoutY="159.0" mnemonicParsing="false" onAction="#num9" prefHeight="24.0" prefWidth="28.0" scaleX="1.5" scaleY="1.5" scaleZ="1.5" text="9" />
+            <Button fx:id="punto" layoutX="102.0" layoutY="347.0" mnemonicParsing="false" onAction="#punto" prefHeight="24.0" prefWidth="27.0" scaleX="1.5" scaleY="1.5" scaleZ="1.5" text="." textFill="#f50a0a" />
+            <Button fx:id="num0" layoutX="83.0" layoutY="302.0" mnemonicParsing="false" onAction="#num0" prefHeight="24.0" prefWidth="26.0" scaleX="1.5" scaleY="1.5" scaleZ="1.5" text="0" />
+            <Button fx:id="borrar" layoutX="179.0" layoutY="302.0" mnemonicParsing="false" onAction="#c" prefHeight="24.0" prefWidth="28.0" scaleX="1.5" scaleY="1.5" scaleZ="1.5" text="C" textFill="#2c0aee" />
+            <Button fx:id="suma" layoutX="34.0" layoutY="302.0" mnemonicParsing="false" onAction="#suma" prefHeight="24.0" prefWidth="28.0" scaleX="1.5" scaleY="1.5" scaleZ="1.5" text="+" />
+            <Button fx:id="mul" layoutX="179.0" layoutY="253.0" mnemonicParsing="false" onAction="#mul" prefHeight="24.0" prefWidth="28.0" scaleX="1.5" scaleY="1.5" scaleZ="1.5" text="X" />
+            <Button fx:id="resultado" layoutX="131.0" layoutY="302.0" mnemonicParsing="false" onAction="#resultado" prefHeight="24.0" prefWidth="28.0" scaleX="1.5" scaleY="1.5" scaleZ="1.5" text="=" />
+            <Button fx:id="div" layoutX="176.0" layoutY="159.0" mnemonicParsing="false" onAction="#div" prefHeight="24.0" prefWidth="28.0" scaleX="1.5" scaleY="1.5" scaleZ="1.5" text="/" />
+            <Button fx:id="resta" layoutX="176.0" layoutY="205.0" mnemonicParsing="false" onAction="#resta" prefHeight="24.0" prefWidth="28.0" scaleX="1.5" scaleY="1.5" scaleZ="1.5" text="-" />
+            <Label fx:id="etiqueta1" alignment="CENTER" contentDisplay="TOP" layoutX="35.0" layoutY="30.0" prefHeight="24.0" prefWidth="167.0" style="-fx-background-color: black;" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label fx:id="etiqueta2" alignment="CENTER" contentDisplay="TOP" layoutX="35.0" layoutY="67.0" prefHeight="24.0" prefWidth="167.0" style="-fx-background-color: black;" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <Label fx:id="etiqueta3" alignment="CENTER" contentDisplay="TOP" layoutX="35.0" layoutY="99.0" prefHeight="24.0" prefWidth="167.0" style="-fx-background-color: black;" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+         </children>
+      </Pane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
